@@ -1,0 +1,65 @@
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
+svg{
+	position: none;
+}
+body{
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	padding: 0;
+	margin: 0;
+	font-family: 'Quicksand', sans-serif;
+	color: #212121;
+	background-color: #fff;
+	min-height: 100vh;
+}
+main{
+	min-height: 100vh;
+	min-width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+main #graphic{
+	filter: url(#goo);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	height: 10em;
+	width: 10em;
+	box-shadow: 0 0 0.5em silver;
+	background-color: #fff;
+	transition: box-shadow 0.3s ease, transform 0.3s ease;
+	cursor: pointer;
+}
+main #graphic:active{
+	transform: scale(0.95)
+}
+main #graphic div{
+	border-radius: 50px;
+	background-color: dodgerblue;
+	width: 1em;
+	min-height: 3em;
+	margin: 0.5em;
+	transition: height 0.3s ease;
+}
+main #graphic div:nth-child(2){
+	min-height: 5em;
+}
+::selection{
+	background-color: silver;
+	color: white;
+}
