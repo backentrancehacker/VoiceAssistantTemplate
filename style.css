@@ -56,10 +56,22 @@ main #graphic div{
 	margin: 0.5em;
 	transition: height 0.3s ease;
 }
-main #graphic div:nth-child(2){
+main #graphic div.none:nth-child(2){
 	min-height: 5em;
 }
 ::selection{
 	background-color: silver;
 	color: white;
+}
+.animate{
+	animation: 0.3s animate ease-in-out infinite alternate;
+	animation-delay: calc(var(--i) * 0.5s);
+}
+@keyframes animate{
+	from{
+		height: 3em
+	}
+	to{
+		height: 5em;
+	}
 }

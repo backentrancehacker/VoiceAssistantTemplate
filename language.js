@@ -54,7 +54,7 @@ const transpile = (tree) => {
 					let command = commands[part.value];
 
 					if(total.length < command.params && command.params){
-						playBack(`The ${command} more parameters.`)
+						playBack(`The ${part.value} command needs more parameters.`)
 					}
 					else{
 						command.run(total || null)
