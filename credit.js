@@ -50,4 +50,4 @@ function createCredit(git, twit){
 	subIcons[1].querySelector('a').href = `https://twitter.com/${twit}`
 	document.body.appendChild(icons)
 }
-createCredit('backentrancehacker/VoiceAssistantTemplate', 'AdCharity2')
+createCredit('nathan-pham/VoiceAssistantTemplate', 'npham23')
